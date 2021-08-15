@@ -629,17 +629,12 @@ p {
 } 
 
 .rodapeprod {
-    margin-top: 245px;
+    margin-top: 260px;
     width: 100%;
-    float: left;
-    background-color: #220BA3;
+    float:left;
+    background-color: #00acee;
     padding: 25px 8%;
 }
-
-.rodapeprod p {
-    color: #fff;
-}
-
 /* PRINCIPAL SERVIÇOS */ 
 .principal{
     width: 100%;
