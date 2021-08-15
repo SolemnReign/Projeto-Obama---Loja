@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     box-sizing: border-box;
     border: none;
     outline: none;
 }
+/* codigo de fonte anterior font-family: 'Roboto', sans-serif; */
 
 img {
     max-width: none;
@@ -24,13 +25,14 @@ a {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #333;
 }
 
 p {
     font-size: 1em;
     color: #777;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 /* CABECALHO */
@@ -40,6 +42,7 @@ p {
     float: left;
     padding: 50px 8%;
     background-image: linear-gradient(to right, #4F32F0, #8873FF);
+    padding-bottom: initial;
 }
 
 .logo a {
@@ -50,6 +53,7 @@ p {
     font-size: 0;
     border-radius: 10px;
 }
+
 .cabecalho form {
     width: 30%;
     float: right;
@@ -74,6 +78,15 @@ p {
     margin-top: 25px;
 }
 
+.cabecalho h2{
+    font-family: 'Teko', sans-serif;
+    float: left;
+    color: #fff;
+    font-size: 6em;
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
 /* MENU */
 
 .menu {
@@ -89,7 +102,6 @@ p {
 
 .menu li a {
     color: #9d9d9d;
-
     padding: 18px;
 }
 
@@ -171,38 +183,30 @@ p {
     font-size: 1.2em;
 }
 
-.avaliacao h3 {
-    width: 122px;
-    height: 162px;
+.avaliacao {
+    margin: 15px 0 15px 0;
     float: left;
-    background-image: url(../Imagem/cliente.jpg);
-    font-size: 0;
-    border-radius: 10px 0px 0px 10px;
-    border-left: solid #4F32F0;
-    border-top: solid #4F32F0;
-    border-bottom: solid #4F32F0;
+    border: 2px solid #111;
+    border-radius: 10px;
 }
 
 .avaliacao p {
     width: 88%;
     height: 162px;
-    border-bottom: solid #111;
-    border-top: solid #111;
-    border-right: 10px solid #111;
-    border-radius: 0 10px 10px 0;
     padding: 10px;
     float: left;
 }
 
 .avaliacao span {
     font-size: 1.3em;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.avaliacao {
-    margin: 15px 0 15px 0;
-    float: left;
+.avaliacao img {
+    width: 8.5%;
+    margin: 10px 0 0 15px;
+    border-radius: 15px;
 }
-
 
 /* ONDE-ESTAMOS - SIDE BAR */
 
@@ -239,7 +243,7 @@ p {
     color: #ddd;
 }
 
-/* NOSSOS PRODUTOS */
+/* NOSSOS PRODUTOS - SIDE BAR */
 
 .nossos-produtos {
     width: 30%;
@@ -298,6 +302,12 @@ p {
     text-align: center;
     font-size: 2em;
     font-style: bould;
+}
+
+.nossos-produtos a {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
 }
 
 /* NEWSLETTER */
@@ -365,4 +375,296 @@ p {
 
 .rodape p {
     color: #fff;
+}
+
+/* Contato */
+/* Titulo  */
+#principal{
+    width: 100%;
+    padding: 100px;
+    float: left;
+}
+
+#principal  h1{
+    text-align: center;
+    font-size: 60pt;
+}
+
+#principal p{
+    font-size: 18pt;
+    text-align: center;
+    color:rgba(79, 50, 240, 1);
+    font-family: 'Bebas Neue', cursive;
+}
+/* Formulario  */
+#principal form{
+    float: left;
+    width: 100%;
+    padding: 20px 8%;
+}
+
+#forms{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#formulario{
+    border-bottom: 1px solid #4F32F0;
+    margin-right: 50px;
+    width: 300px;
+    margin-bottom:5%;
+    font-size: 13pt;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+}
+
+#formulario2{
+    margin-right: 0px;
+    border-bottom: 1px solid #4F32F0;
+    width: 300px;
+    height: 20%;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+}
+
+#formulario::placeholder{
+    font-size: 14pt;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;    
+}
+
+#formulario2::placeholder{
+    font-size: 14pt;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
+#formulario:focus{
+    background-color:rgba(79, 50, 240, 0.3) ;
+    transition: 1s;
+}
+
+#formulario2:focus{
+    background-color:rgba(79, 50, 240, 0.3) ;
+    transition: 1s;    
+}
+
+#comentario{
+    width: 50%;
+    border: 1px solid #4F32F0;
+    margin-top: 40px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+}
+
+#principal button{
+    margin-top: 50px;
+    margin: 20px auto;
+    padding:10px 30px;
+    background-color: #4e32f0be;
+    color: white;
+    cursor: pointer;
+}
+#principal button:hover{
+    background-color: #2f0df3;
+    transition: 1s;
+}
+
+/*Section Ouvidoria */
+#ouvidoria{
+    padding:50px 15%;
+    float: left;
+    width: 100%;
+}
+
+#ouvidoria h2{
+    font-size: 40pt;
+}
+
+#ouvidoria img{
+    width:29%;
+    float: left;
+}
+
+#info-ouvi{
+    float: right;
+    padding: 50px 2%;
+
+    
+}
+#info-ouvi h3{
+    font-size: 20pt;
+    color:#4f32f0 ;
+
+}
+
+#info-ouvi a{
+    padding: 10px;
+    font-size: 18pt;
+    float: left;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* PRODUTOS */
+
+/* PRINCIPAL */
+
+.titulo {
+    text-align: center;
+    padding: 300px 0 50px 0;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); ;
+}
+
+.titulo h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+}
+
+.titulo p {
+    font-family: 'Roboto', sans-serif;
+    font-size:0.9em;
+}
+
+/* FOTOS DE PRODUTOS */
+
+.produtos{
+    margin: 5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10%;
+    
+}
+
+.preco {
+    color: grey;
+    font-size: 22px;
+  }
+
+.produto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Roboto' sans-serif;
+    width: 100%;
+    border-radius: 10px 10px;
+  }
+
+
+.produto button {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+.produto button:hover {
+    opacity: 0.7;
+  }
+
+.produto img {
+    width: 175px;
+    height: auto;
+}
+
+.produto a {    
+    color:#fff;     
+    padding:10px 15px 10px 15px;   
+    display:block;    
+    text-decoration: none;   
+}    
+.produto a:hover {    
+    color:#ffffff;    
+}    
+.produto li {    
+    background-color:#220BA3;          
+    display:block;     
+    float:left;    
+    width: inherit;
+    height: auto;
+    color:#fff;     
+    padding:10px 15px 10px 15px;   
+    display:block;    
+    text-decoration: none; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+}    
+.produto li:hover {    
+    background-color:#0072BA ;
+}  
+
+.produto ul {     
+    padding:0;     
+    margin:0    
+}    
+    
+.produto li ul li {    
+    float:none; 
+    display: block;
+    width: auto;
+    height: auto;  
+}    
+.produto li ul {    
+    display:none;         
+    z-index:1;  
+    position: absolute;
+}    
+.produto li:hover ul {    
+    display:block;  
+} 
+
+.rodapeprod {
+    margin-top: 245px;
+    width: 100%;
+    float: left;
+    background-color: #220BA3;
+    padding: 25px 8%;
+}
+
+.rodapeprod p {
+    color: #fff;
+}
+
+/* PRINCIPAL SERVIÇOS */ 
+.principal{
+    width: 100%;
+    float: right;
+    padding: 16px 8%;
+}
+.servicos{
+    width: 100%;
+    float: left;
+    padding: 0px 20px 40px 0px;
+}
+.servicos h2{
+    margin-bottom: 40px;
+}
+.servicos img{
+    width: 30%;
+    float: left;
+    border-radius: 4px;
+    margin: 0 15px 0;
+}
+.servicos p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.tamanho{
+    width: 200px;
+    height: 270px;
 }
